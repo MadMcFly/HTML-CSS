@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Selector</title>
+</head>
+
+<!-- 
+	tag selector:
+    div{
+		color:#00F;
+		background:#CCC;
+		font-size:36px;
+	}
+    
+    class selector:
+    .first{				/*class selector is prior to tag selector*/
+		color:#F00;
+		background:#CCC;
+		font-size:36px;
+	}
+	
+    id selector:				id has to unique in the html file!!!!
+	#hyperlink1{				/*id selector has highest priority*/
+		color:#0FF;
+		background:#F33;
+		font-size:36px;
+		text-decoration:none;
+	}
+    
+    intersection selector:
+    .first span{
+		font-size:16px
+	}
+    
+    union selector:
+     .first, span{
+		font-size:16px
+	}
+    
+    wildcard selector:
+    *{
+		font-size:16px
+	}
+-->
+
+<style type="text/css">
+	div{
+		color:#00F;
+		background:#CCC;
+		font-size:36px;
+	}
+	
+	.first{				/*class selector is prior to tag selector*/
+		color:#F00;
+		background:#CCC;
+		font-size:36px;
+	}
+	
+	#hyperlink1{				/*id selector has highest priority*/
+		color:#0FF;
+		background:#F33;
+		font-size:36px;
+		text-decoration:none;
+	}
+	
+	.first span{
+		font-size:16px;
+	}
+	
+	*{
+		text-decoration:line-through;
+	}
+</style>
+<body>
+	<div class="first">the first <span>div tag</span> is here</div>
+    <div class="second">the second div tag is here</div>
+    <a href="#" class="first" id="hyperlink1"><span>Google</span></a>
+</body>
+</html>
